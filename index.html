@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta de Amor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fce4ec; /* rosa claro */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .carta {
+            background-color: #ffb6c1; /* rosa */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .boton {
+            background-color: #ff69b4; /* rosa más oscuro */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .boton:hover {
+            background-color: #ff1493; /* rosa aún más oscuro */
+        }
+    </style>
+</head>
+<body>
+    <div class="carta">
+        <h1>Carta de Amor</h1>
+        <button class="boton" onclick="abrirCarta()">Abrir Carta</button>
+        <p id="mensaje" style="display: none; font-size: 20px; margin-top: 20px;"></p>
+    </div>
+
+    <script>
+        function abrirCarta() {
+            var mensaje = document.getElementById("mensaje");
+            mensaje.innerText = "Te extraño mi niña bonita";
+            mensaje.style.display = "block";
+        }
+    </script>
+</body>
+</html>
